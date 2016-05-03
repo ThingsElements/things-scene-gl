@@ -1,0 +1,84 @@
+<!doctype html>
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>things-scene-gl Demo</title>
+    <script src="../../webcomponentsjs/webcomponents-lite.min.js"></script>
+
+    <link rel="import" href="../../things-scene-viewer/things-scene-viewer.html">
+    <link rel="import" href="../../things-scene-viewer/things-scene-layer.html">
+    <link rel="import" href="../../things-scene-viewer/things-scene-handler.html">
+
+    <link rel="import" href="./things-scene-gl.html">
+
+    <style is="custom-style">
+
+    @font-face {
+      font-family: "Bitstream Vera Serif Bold";
+      src: url("fonts/VeraSeBd.ttf");
+    }
+
+    things-scene-viewer {
+      display: block;
+      width: 640px;
+      height: 480px;
+    }
+    </style>
+  </head>
+  <body unresolved>
+
+    <template is="dom-bind" id="app">
+      <p>An example of <code>&lt;things-scene-gl&gt;</code>:</p>
+
+      <things-scene-viewer id='scene' model='{{model}}' mode="1">
+        <things-scene-layer type="gl-layer"></things-scene-layer>
+      </things-scene-viewer>
+
+      <button id="change">Change Value</button>
+
+    </template>
+
+    <script>
+      window.addEventListener('WebComponentsReady', function(e) {
+        var app = document.querySelector('#app')
+
+        app.$.change.addEventListener('click', function() {
+          var viewer = app.$.scene
+        })
+
+        app.model = {
+          components: [{
+            type: 'text',
+            top: 30,
+            left: 30,
+            width: 100,
+            height: 100,
+            textAlign: 'left',
+            fontSize: '30',
+            fontFamily: 'serif',
+            text: '이 예제에서는 WEBGL CANVAS를 설명합니다.'
+          }, {
+            type: 'line',
+
+            x1: 100,
+            y1: 100,
+            x2: 200,
+            y2: 200,
+            strokeStyle: 'black',
+            lineWidth: 10
+          }]
+        };
+      });
+    </script>
+  </body>
+</html>
