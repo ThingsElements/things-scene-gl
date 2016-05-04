@@ -38,10 +38,6 @@ const AMORTIZATION = 0.98; // 감소분
 
 export default class ModelCubeLayer extends Layer {
 
-  constructor(model) {
-    super(model)
-  }
-
   getContext() {
     if(!this._context)
       this._context = this.canvas.getContext('experimental-webgl', {antialias: true});

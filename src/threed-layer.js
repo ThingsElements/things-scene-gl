@@ -38,8 +38,8 @@ const AMORTIZATION = 0.98; // 감소분
 
 export default class ThreeDLayer extends Layer {
 
-  constructor(model) {
-    super(model)
+  constructor(model, context) {
+    super(model, context)
 
     this.texture = model.texture
   }

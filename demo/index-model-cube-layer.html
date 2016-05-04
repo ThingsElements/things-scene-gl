@@ -41,7 +41,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <p>An example of <code>&lt;things-scene-gl&gt;</code>:</p>
 
       <things-scene-viewer id='scene' model='{{model}}' mode="1">
-        <things-scene-layer type="model-cube-layer"></things-scene-layer>
+        <things-scene-layer type="model-cube-layer">
+          <things-scene-property name="symbol" value="qrcode"></things-scene-property>
+          <things-scene-property name="text" value="http://www.hatiolab.com/site_prod_crm"></things-scene-property>
+          <things-scene-property name="scale_h" value="3"></things-scene-property>
+          <things-scene-property name="scale_w" value="3"></things-scene-property>
+        </things-scene-layer>
       </things-scene-viewer>
 
       <button id="change">Change Value</button>

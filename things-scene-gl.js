@@ -58,10 +58,10 @@ var AMORTIZATION = 0.98; // 감소분
 var CubeLayer = function (_Layer) {
   _inherits(CubeLayer, _Layer);
 
-  function CubeLayer(model) {
+  function CubeLayer(model, context) {
     _classCallCheck(this, CubeLayer);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(CubeLayer).call(this, model));
+    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(CubeLayer).call(this, model, context));
 
     _this.texture = model.texture;
     return _this;
@@ -839,10 +839,10 @@ var AMORTIZATION = 0.98; // 감소분
 var ModelCubeLayer = function (_Layer) {
   _inherits(ModelCubeLayer, _Layer);
 
-  function ModelCubeLayer(model) {
+  function ModelCubeLayer() {
     _classCallCheck(this, ModelCubeLayer);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(ModelCubeLayer).call(this, model));
+    return _possibleConstructorReturn(this, Object.getPrototypeOf(ModelCubeLayer).apply(this, arguments));
   }
 
   _createClass(ModelCubeLayer, [{
@@ -1238,10 +1238,10 @@ var AMORTIZATION = 0.95; // 감소분
 var QrCubeLayer = function (_Layer) {
   _inherits(QrCubeLayer, _Layer);
 
-  function QrCubeLayer(model) {
+  function QrCubeLayer() {
     _classCallCheck(this, QrCubeLayer);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(QrCubeLayer).call(this, model));
+    return _possibleConstructorReturn(this, Object.getPrototypeOf(QrCubeLayer).apply(this, arguments));
   }
 
   _createClass(QrCubeLayer, [{
@@ -1651,10 +1651,10 @@ var AMORTIZATION = 0.98; // 감소분
 var ThreeDLayer = function (_Layer) {
   _inherits(ThreeDLayer, _Layer);
 
-  function ThreeDLayer(model) {
+  function ThreeDLayer(model, context) {
     _classCallCheck(this, ThreeDLayer);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ThreeDLayer).call(this, model));
+    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ThreeDLayer).call(this, model, context));
 
     _this.texture = model.texture;
     return _this;

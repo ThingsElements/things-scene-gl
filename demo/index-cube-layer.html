@@ -16,6 +16,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <script src="../../webcomponentsjs/webcomponents-lite.min.js"></script>
 
     <link rel="import" href="../../things-scene-viewer/things-scene-viewer.html">
+    <link rel="import" href="../../things-scene-viewer/things-scene-property.html">
     <link rel="import" href="../../things-scene-viewer/things-scene-layer.html">
     <link rel="import" href="../../things-scene-viewer/things-scene-handler.html">
 
@@ -42,6 +43,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       <things-scene-viewer id='scene' model='{{model}}' mode="1">
         <things-scene-layer type="cube-layer">
+          <things-scene-property name="texture" value="resources/texture.png">
+          </things-scene-property>
         </things-scene-layer>
       </things-scene-viewer>
 
