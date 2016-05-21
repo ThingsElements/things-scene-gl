@@ -8,7 +8,7 @@
   },
   "scripts": {
     "serve": "watchify src/*.js -o things-scene-gl.js src/index.js & polyserve",
-    "build": "browserify src/index.js -o things-scene-gl.js && uglifyjs things-scene-gl.js -o things-scene-gl-min.js"
+    "build": "browserify src/index.js -o things-scene-gl.js && uglifyjs things-scene-gl.js -m -c -o things-scene-gl-min.js"
   },
   "repository": {
     "type": "git",
