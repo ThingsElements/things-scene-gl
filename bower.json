@@ -1,11 +1,12 @@
 {
   "name": "things-scene-gl",
-  "version": "1.0.7",
+  "version": "2.0.1",
   "authors": [
     "Hatio Lab. <heartyoh@hatiolab.com>"
   ],
   "description": "An element providing a solution to no problem in particular.",
   "keywords": [
+    "things-scene",
     "web-component",
     "polymer",
     "seed"
@@ -18,7 +19,7 @@
     "/test/"
   ],
   "dependencies": {
-    "things-scene": "^0.6.0"
+    "things-scene-core": "ThingsElements/things-scene-core#^2.0.0"
   },
   "devDependencies": {
     "polymer": "Polymer/polymer#^1.2.0",
